@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane fx:id="addKeyPane" prefHeight="1000.0" prefWidth="1850.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AddKeyController">
+    <children>
+        <Label fx:id="rfidNumberLabel" layoutX="340.0" layoutY="119.0" style="-fx-font-size: 40" text="Numer breloka RFID" />
+        <Label fx:id="roomNumberLabel" layoutX="508.0" layoutY="242.0" style="-fx-font-size: 40" text="Numer sali" />
+        <Label fx:id="roomTypeLabel" layoutX="565.0" layoutY="382.0" style="-fx-font-size: 40" text="Typ sali" />
+        <TextField fx:id="txtRfidNumber" layoutX="775.0" layoutY="119.0" prefHeight="54.0" prefWidth="300.0" style="-fx-font-size: 20" />
+        <TextField fx:id="txtRoomNumber" layoutX="775.0" layoutY="244.0" prefHeight="54.0" prefWidth="300.0" style="-fx-font-size: 20" />
+        <ChoiceBox fx:id="chbRoomType" layoutX="775.0" layoutY="375.0" prefHeight="54.0" prefWidth="300.0" style="-fx-font-size: 20" />
+        <Button fx:id="backButton" layoutX="661.0" layoutY="855.0" mnemonicParsing="false" onAction="#btnBack_OnAction" prefHeight="35" style="-fx-font-size: 35" text="Cofnij" />
+        <Button fx:id="addButton" layoutX="1049.0" layoutY="855.0" mnemonicParsing="false" onAction="#btnAdd_OnAction" prefHeight="35" style="-fx-font-size: 35" text="Dodaj" />
+      <TextField fx:id="txtNewRoomType" layoutX="775.0" layoutY="627.0" prefHeight="54.0" prefWidth="300.0" style="-fx-font-size: 20" />
+      <Label layoutX="459.0" layoutY="625.0" style="-fx-font-size: 40" text="Nowy typ sali" />
+      <Button fx:id="btnAddNewRoomType" layoutX="1191.0" layoutY="616.0" mnemonicParsing="false" onAction="#btnAddNewRoomType_OnAction" prefHeight="35" style="-fx-font-size: 35" text="Dodaj nowy typ" />
+      <Separator layoutY="569.0" prefHeight="21.0" prefWidth="1920.0" />
+      <Separator layoutY="721.0" prefHeight="21.0" prefWidth="1920.0" />
+    </children>
+</Pane>

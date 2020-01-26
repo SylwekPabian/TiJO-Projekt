@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane fx:id="addEmployeePane" prefHeight="1000.0" prefWidth="1850.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AddEmployeeController">
+    <children>
+        <Label fx:id="lastNameNumberLabel" layoutX="438.0" layoutY="207.0" style="-fx-font-size: 40" text="Nazwisko" />
+        <Label fx:id="firstNameNumberLabel" layoutX="439.0" layoutY="112.0" style="-fx-font-size: 40" text="Imię" />
+        <Label fx:id="rfidNumberLabel" layoutX="438.0" layoutY="300.0" style="-fx-font-size: 40" text="Numer RFID" />
+        <TextField fx:id="txtFirstName" layoutX="775.0" layoutY="114.0" prefHeight="54.0" prefWidth="300.0" style="-fx-font-size: 20" />
+        <TextField fx:id="txtLastName" layoutX="775.0" layoutY="209.0" prefHeight="54.0" prefWidth="300.0" style="-fx-font-size: 20" />
+        <TextField fx:id="txtRfidNumber" layoutX="774.0" layoutY="302.0" prefHeight="54.0" prefWidth="300.0" style="-fx-font-size: 20" />
+        <ListView fx:id="lstEmployeeType" layoutX="774.0" layoutY="406.0" prefHeight="250.0" prefWidth="300.0" />
+        <TextField fx:id="txtNewEmployeeType" layoutX="776.0" layoutY="758.0" prefHeight="54.0" prefWidth="300.0" style="-fx-font-size: 20" />
+        <Label fx:id="employeeTypeLabel" layoutX="437.0" layoutY="406.0" style="-fx-font-size: 40" text="Typ pracownika" />
+        <Button fx:id="btnBack" layoutX="661.0" layoutY="911.0" mnemonicParsing="false" onAction="#btnBack_OnAction" prefHeight="35" style="-fx-font-size: 35" text="Cofnij" />
+        <Button fx:id="btnAdd" layoutX="1049.0" layoutY="911.0" mnemonicParsing="false" onAction="#btnAdd_OnAction" prefHeight="35" style="-fx-font-size: 35" text="Dodaj" />
+        <Separator layoutX="-7.0" layoutY="718.0" prefHeight="10.0" prefWidth="1857.0" />
+        <Label layoutX="437.0" layoutY="757.0" style="-fx-font-size: 40" text="Nowy typ" />
+        <Button fx:id="btnAddNewEmployeeType" layoutX="1119.0" layoutY="748.0" mnemonicParsing="false" onAction="#btnAddNewEmployeeType_OnAction" prefHeight="35" style="-fx-font-size: 35" text="Dodaj typ" />
+        <Separator layoutX="-1.0" layoutY="842.0" prefHeight="10.0" prefWidth="1857.0" />
+
+    </children>
+</Pane>

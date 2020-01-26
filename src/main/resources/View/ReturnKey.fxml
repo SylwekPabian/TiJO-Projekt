@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane fx:id="returnKeyPane" prefHeight="1000.0" prefWidth="1850.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ReturnKeyController">
+    <children>
+        <Label fx:id="barcodeKeyLabel" layoutX="671.0" layoutY="248.0" prefHeight="48.0" style="-fx-font-size: 35" text="Kod kreskowy klucza:" />
+        <TextField fx:id="txtBarcodeKey" layoutX="1039.0" layoutY="247.0" prefHeight="54.0" prefWidth="300.0" style="-fx-font-size: 20" />
+        <Label fx:id="userIdLabel" layoutX="186.0" layoutY="402.0" prefHeight="48.0" style="-fx-font-size: 30" text="Kod kreskowy pracownika/Numer dowodu/Numer legitymacji:" />
+        <TextField fx:id="txtUserId" layoutX="1039.0" layoutY="399.0" prefHeight="54.0" prefWidth="300.0" style="-fx-font-size: 20" />
+        <Button fx:id="btnCancel" layoutX="616.0" layoutY="891.0" onAction="#btnCancel_OnAction" prefHeight="35" style="-fx-font-size:35" text="Anuluj" />
+        <Button fx:id="btnEnd" layoutX="1127.0" layoutY="891.0" onAction="#btnEnd_OnAction" prefHeight="35" style="-fx-font-size:35" text="Zwróć" />
+        <TextField fx:id="txtFirstName" editable="false" layoutX="1039.0" layoutY="492.0" prefHeight="54.0" prefWidth="300.0" style="-fx-font-size: 20" />
+        <TextField fx:id="txtLastName" editable="false" layoutX="1039.0" layoutY="576.0" prefHeight="48.0" prefWidth="300.0" style="-fx-font-size: 20" />
+    </children>
+</Pane>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane fx:id="rentalHistoryPane" prefHeight="1000.0" prefWidth="1850.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="KeyHistoryController">
+    <children>
+        <TableView fx:id="tblHistory" layoutX="34.0" layoutY="38.0" prefHeight="875.0" prefWidth="1782.0" style="-fx-font-size: 18; -fx-alignment: BASELINE_CENTER">
+            <columns>
+                <TableColumn fx:id="colKeyIssueDate" prefWidth="220.0" text="Data pobrania klucza" />
+                <TableColumn fx:id="colKeyIssueTime" prefWidth="220.0" text="Godzina pobrania klucza" />
+                <TableColumn fx:id="colKeyReturnDate" prefWidth="220.0" text="Data oddania klucza" />
+                <TableColumn fx:id="colKeyReturnTime" prefWidth="220.0" text="Godzina oddania klucza" />
+                <TableColumn fx:id="colUserLastName" prefWidth="450.0" text="Nazwisko" />
+                <TableColumn fx:id="colUserFirstName" prefWidth="450.0" text="Imię" />
+            </columns>
+        </TableView>
+      <Button fx:id="btnBack" layoutX="775.0" layoutY="919.0" mnemonicParsing="false" onAction="#btnBack_OnAction" prefHeight="35.0" prefWidth="300.0" style="-fx-font-size: 35" text="Wróć" />
+
+    </children>
+</Pane>

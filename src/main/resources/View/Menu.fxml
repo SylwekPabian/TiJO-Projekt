@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane prefWidth="1850.0" prefHeight="1000.0" fx:id="menuPane" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="MenuController">
+    <children>
+        <Button fx:id="btnRentKey" text="Wypożycz klucz" layoutX="787" layoutY="136"
+                prefWidth="346" prefHeight="35" style="-fx-font-size:35"
+                onAction="#btnRentKey_OnAction"/>
+        <Button fx:id="btnReturnKey" text="Zwróć klucz" layoutX="787" layoutY="248"
+                prefWidth="346" prefHeight="35" style="-fx-font-size:35"
+                onAction="#btnReturnKey_OnAction"/>
+        <Button fx:id="btnAddKey" text="Dodaj klucz" layoutX="787" layoutY="360"
+                prefWidth="346" prefHeight="35" style="-fx-font-size:35"
+                onAction="#btnAddKey_OnAction"/>
+        <Button fx:id="addEmplyeeButton" text="Dodaj pracownika" layoutX="787" layoutY="471"
+                prefWidth="346" prefHeight="35" style="-fx-font-size:35"
+                onAction="#addEmplyeeButtonAction"/>
+        <Button fx:id="btnRentalKeyHistory" text="Ewidencja" layoutX="787" layoutY="580"
+                prefWidth="346" prefHeight="35" style="-fx-font-size:35"
+                onAction="#rentalKeyHistoryButtonAction"/>
+        <Button fx:id="btnLogout" text="Wyloguj" layoutX="787" layoutY="907"
+                prefWidth="346" prefHeight="35" style="-fx-font-size:35"
+                onAction="#btnLogout_OnAction"/>
+    </children>
+</Pane>
+
+

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane fx:id="rentMenuPane" prefHeight="1000.0" prefWidth="1850.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="RentKeyController">
+    <children>
+
+        <Button fx:id="btnBack" layoutX="446.0" layoutY="911.0" onAction="#btnBack_OnAction" prefHeight="35" prefWidth="464" style="-fx-font-size:35" text="Cofnij" />
+        <Label fx:id="lblBarcodeNumber" layoutX="639.0" layoutY="175.0" style="-fx-font-size: 30" text="Kod kreskowy klucza:" />
+        <TextField fx:id="txtBarcodeNumber" layoutX="981.0" layoutY="170.0" prefHeight="54.0" prefWidth="300.0" style="-fx-font-size: 20" />
+        <Label fx:id="lblPersonData" layoutX="736.0" layoutY="288.0" style="-fx-font-size: 40; -fx-font-weight: bold" text="Dane osoby wypożyczającej" />
+        <Label fx:id="lblRfidNumber" layoutX="130.0" layoutY="455.0" style="-fx-font-size: 30" text="Kod kreskowy pracownika/Numer albumu/ Numer dowodu:" />
+        <TextField fx:id="txtIdNumber" layoutX="981.0" layoutY="451.0" prefHeight="54.0" prefWidth="300.0" style="-fx-font-size: 20" />
+        <Label fx:id="lblLastName" layoutX="787.0" layoutY="574.0" style="-fx-font-size: 30" text="Nazwisko:" />
+        <TextField fx:id="txtLastName" layoutX="981.0" layoutY="570.0" prefHeight="54.0" prefWidth="300.0" style="-fx-font-size: 20" />
+        <Label fx:id="lblFirstName" layoutX="861.0" layoutY="698.0" style="-fx-font-size: 30" text="Imię:" />
+        <TextField fx:id="txtFirstName" layoutX="981.0" layoutY="694.0" prefHeight="54.0" prefWidth="300.0" style="-fx-font-size: 20" />
+      <Button fx:id="btnRent" layoutX="1053.0" layoutY="911.0" onAction="#btnRent_OnAction" prefHeight="35" prefWidth="464" style="-fx-font-size:35" text="Wypożycz" />
+    </children>
+</Pane>

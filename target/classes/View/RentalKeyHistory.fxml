@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane fx:id="rentalHistoryPane" prefHeight="1000.0" prefWidth="1850.0" xmlns="http://javafx.com/javafx/10.0.2-internal"
+      xmlns:fx="http://javafx.com/fxml/1" fx:controller="RentalKeyHistoryController">
+    <children>
+        <ButtonBar fx:id="menuBar" prefHeight="29.0" prefWidth="535.0">
+            <buttons>
+                <Button fx:id="btnGroundFloor" onAction="#btnGroundFloor_OnAction" mnemonicParsing="false" text="Parter" ButtonBar.buttonData="LEFT"/>
+                <Button fx:id="btnFirstFloor" onAction="#btnFirstFloor_OnAction" mnemonicParsing="false" text="Pierwsze piętro"
+                        ButtonBar.buttonData="LEFT"/>
+                <Button fx:id="btnSecondFloor" onAction="#btnSecondFloor_OnAction" mnemonicParsing="false" text="Drugie piętro"
+                        ButtonBar.buttonData="LEFT"/>
+                <Button fx:id="btnThirdFloor" onAction="#btnThirdFloor_OnAction" mnemonicParsing="false" text="Trzecie piętro"
+                        ButtonBar.buttonData="LEFT"/>
+                <Button fx:id="btnBack" mnemonicParsing="false" onAction="#btnBack_OnAction" text="Cofnij"
+                        ButtonBar.buttonData="LEFT"/>
+            </buttons>
+        </ButtonBar>
+        <Separator layoutY="30.0" prefHeight="5.0" prefWidth="1920.0"/>
+        <TableView fx:id="tblRoomList" layoutX="475.0" layoutY="55.0" prefHeight="925.0" prefWidth="900.0"
+                   style="-fx-font-size: 18; -fx-alignment: BASELINE_CENTER">
+            <columns>
+                <TableColumn fx:id="colRoomNumber" prefWidth="300.0" text="Numer sali"/>
+                <TableColumn fx:id="colRoomType" prefWidth="300.0" text="Typ pokoju"/>
+                <TableColumn fx:id="colMoreInfo" prefWidth="300.0" text="Więcej"/>
+            </columns>
+        </TableView>
+
+    </children>
+</Pane>
